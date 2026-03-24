@@ -1,5 +1,7 @@
 data = [2, 5, 7, 9, 12, 15, 18, 21]
 
+data = [2, 5, 7, 9, 12, 15, 18, 21]
+
 def binary_search(arr, target):
     lo, hi = 0, len(arr) - 1
     while lo <= hi:
@@ -26,3 +28,6 @@ def binary_search_with_counts(arr, target):
         else:
             lo = mid + 1
     return -1, comparisons
+
+print(binary_search(data, 9)) 
+print(binary_search_with_counts(data, 9))
